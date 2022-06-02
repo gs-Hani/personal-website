@@ -1,0 +1,201 @@
+html {
+    font-size: 10px;
+    height: 100%
+}
+body{
+    background-color: white;
+    margin: 0;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+nav, main{
+    padding: 0 5%;
+}
+nav {
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    display:flex;
+    align-items: center;
+}
+main{
+    background-color: white;
+    margin: 0;                       
+}
+div {
+    font-size: 1.6rem;
+}
+figcaption {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    padding: 1rem 0 1rem;
+}
+p,li {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+h1{
+    margin: 0;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    font-size:3rem;
+}
+h2{
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    font-size:2.4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+img{
+    border-radius: 1rem;
+}
+/*NAVIGATION*/
+nav ul{
+    padding:2% 0%;
+    margin:2rem 0;
+}
+/*ABOUT ME*/
+.about-me {
+    width:100%;
+    display: flex;
+}
+.about-me img {
+    flex-shrink:0;
+    height: max-content;
+    width: 15%;
+    filter: grayscale(100%);
+    margin-left: auto;
+}
+.text{
+    padding-right:1%;
+    flex-shrink:1;
+}
+.text p{
+    margin-top: 0;
+    margin-bottom:1rem;
+}
+@media only screen and (max-width:1250px){
+    .about-me img {
+        width: 30%;
+    }     
+}
+@media only screen and (max-width:860px){
+    .about-me img {
+        width: 50%;
+    }     
+}
+@media only screen and (max-width:480px),(resolution:150dpi){
+    .about-me img {
+        display: none;
+    }
+    .about-me {
+        display: grid;
+        grid-template-areas:'img img'
+                            'text text';
+        grid-template-rows: 1fr 1fr;
+    }
+    .text {
+        grid-area: text;
+    } 
+    .img{
+        grid-area: img;
+        width: 50%;
+        padding-top:50%;
+        margin: auto;
+        background-image: url("../images/LOGO\ .jpg");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        overflow: hidden;
+        filter: grayscale(0%);
+        /*border:2px solid black;
+        border-radius: 50%;*/
+    }
+}
+/*SERVICES*/
+.services div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services figure{
+    height: auto;
+    width: 15%;
+    margin: 0rem;
+}
+.services img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media only screen and (max-width:480px){
+    .services div{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .services figure{
+        height: auto;
+        width: 100%;
+        margin: 0rem;
+    }   
+}
+/*SKILLS*/
+.skills div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.skills img {
+    width: auto;
+    height: 100%;
+    display: block;
+    border-radius: 0rem;
+}
+.skills figure {
+    height: 3rem;
+    width: auto;
+    margin: 0 1rem 1rem;
+}
+/*LANGUAGES*/
+.languages div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.languages ul {
+    width: 100%;
+    padding:0;
+    margin-top:0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.languages li{
+    margin-right:2rem;
+    list-style: none;
+}
+/*FOOTER*/
+footer {
+    background-color: white;
+    padding: 0rem 10% 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto 0rem 0rem;
+}
+footer img {
+    width: auto;
+    height: 2rem;
+    padding: 1rem;
+}
+@media only screen and (max-width:480px),(resolution:150dpi) {
+    footer{
+        display: flex;
+    }
+}
