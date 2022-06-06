@@ -76,10 +76,15 @@ a{
     color: inherit;
 }
 /*NAVIGATION*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin:2rem 0;
+}
 nav ul{
     padding:2% 0%;
-    margin:2rem 0;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 nav li{
@@ -93,6 +98,18 @@ nav a{
 nav button{
     margin-left: auto;
     margin-right: 2%;
+    background-color:  rgb(10, 10, 10);
+    color:  white;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-width: 0;
+}
+.dark-button {
+    background-color:  white;
+    color:  rgb(10, 10, 10);
 }
 /*ABOUT ME*/
 .about-me {
@@ -148,8 +165,8 @@ nav button{
         background-position: 0% 0%;
         overflow: hidden;
         filter: grayscale(0%);
-        /*border:2px solid black;
-        border-radius: 50%;*/
+        /*border:2px solid black;*/
+        border-radius: 50%;
     }
 }
 /*SERVICES*/
