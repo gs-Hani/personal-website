@@ -11,17 +11,26 @@
         <title>Hani Al-Azzawi</title>
     </head>
     <body>
-      <nav>
+      <nav id="nav">
           <h1>Hani Al-Azzawi</h1>
-          <ul></ul>
-          <button type="button">Dark mode</button>
+          <button type="button" onclick="darkMode()">Dark mode</button>
+          <ul>
+              <li><a href="#about-me">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#languages">Languages</a></li>
+              <li><a href="#pro-exp">Experience</a></li>
+              <li><a href="#edu">Education</a></li>
+              <li><a href="#cert">Certificates</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
       </nav>
       <main>
             <!--ABOUT ME-->
-            <section class="about-me">
+            <section class="about-me" id="about-me">
                 <div class="img"></div>
                 <div class="text">
-                    <h2>About myself:</h2>
+                    <h2><a href="#">About myself:</a></h2>
                     <p>A professional architect that is passionate about sustainable design & care about the environment, I think that sustainable materials are the way to go in concrete dominanted world. </p>
                     <p>I have interests in coding, mathmatics, arts and CG visualization, I usually try to do art that has all those elements.</p>
                     <p>I am not a people person, thus I prefer to stay quiet unless there is an interesting topic being discussed.</p>
@@ -30,8 +39,8 @@
                 <img src="./resources/images/SAM_0060.JPG" alt="Myself in the desert">
             </section>
             <!--SERVICES-->
-            <section class="services">
-                <h2>Services:</h2>
+            <section class="services" id="services">
+                <h2><a href="#">Services:</a></h2>
                 <div>
                     <figure>
                         <img src="./resources/images/architectural-design.jpg" alt="Glass buildings">
@@ -52,8 +61,8 @@
                 </div>
             </section>
             <!--SKILLS-->
-            <section class="skills">
-                <h2>Skills:</h2>
+            <section class="skills" id="skills">
+                <h2><a href="#">Skills:</a></h2>
                 <div>
                     <figure>
                         <img src="./resources/images/html5-2.svg" alt="HTML 5">
@@ -114,8 +123,8 @@
                 </div>
             </section>
             <!--LANGUAGES-->
-            <section class="languages">
-                <h2>Languages:</h2>
+            <section class="languages" id="languages">
+                <h2><a href="#">Languages:</a></h2>
                 <div>
                     <ul>
                         <li>Arabic</li>
@@ -126,7 +135,7 @@
             </section>
             <!--CV-->
             <table>
-                <th colspan="2">Professional experience:</th>
+                <th colspan="2" id="pro-exp"><a href="#">Professional experience:</a></th>
                 <tr>
                     <td class="d">10.2021</td>
                     <td>Junior architect in “Hasan Mahadin Design Studio”</td>
@@ -151,7 +160,7 @@
                     <td class="d">09.2015</td>
                     <td>Intern architect in “Green architects and planners”</td>
                 </tr>
-                <th>Education:</th>
+                <th id="edu"><a href="#">Education:</a></th>
                 <tr>
                     <td class="d">09.2013-01.2019</td>
                     <td>German Jordanian University</td>
@@ -160,7 +169,7 @@
                     <td class="d">09.2006-02.2013</td>
                     <td>Terra Sancta College</td>
                 </tr>
-                <th>Certificates:</th>
+                <th id="cert"><a href="#">Certificates:</a></th>
                 <tr>
                     <td class="d">05.2016</td>
                     <td>Workshop on (Sustainable Building Design) with Koblenz university of applied sciences</td>
@@ -184,7 +193,7 @@
             </table>  
       </main>
       <!--CONTACT INFO-->
-      <footer>
+      <footer id="contact">
             <a href="mailto:hani_alazawi@hotmail.com"><img src="./resources/images/email.svg" alt="email"></a>
             <a href="www.linkedin.com/in/hani-alazzawi"><img src="./resources/images/linkedin-icon-2.svg" alt="linkedin"></a>
             <a href="https://github.com/gs-Hani"><img src="./resources/images/github-icon-1.svg" alt="github"></a>
@@ -198,5 +207,6 @@
             <a href="discord.com/users/Horseless Headless Horseman#4537"><img src="./resources/images/discord-6.svg" alt="discord"></a>
             <a href="https://steamcommunity.com/id/gs-hani/"><img src="./resources/images/steam-1.svg" alt="steam"></a>
       </footer> 
+      <script  src="resources/js/main.js"></script>
     </body>
 </html>
