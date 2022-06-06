@@ -33,7 +33,7 @@ figcaption {
     font-weight: 400;
     padding: 1rem 0 1rem;
 }
-p,li {
+p,li,td {
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
     font-size: 2rem;
@@ -44,15 +44,29 @@ h1{
     font-weight: 400;
     font-size:3rem;
 }
-h2{
+h2,th{
     font-family: 'Secular One', sans-serif;
     font-weight: 400;
     font-size:2.4rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
+th{
+    text-align: left;
+    width: auto;
+}
 img{
     border-radius: 1rem;
+}
+table {
+    margin-bottom: 1rem;
+}
+td{
+    vertical-align: text-top; 
+}
+.d {
+    color :gray;
+    width: auto;
 }
 /*NAVIGATION*/
 nav ul{
