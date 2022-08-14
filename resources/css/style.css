@@ -15,13 +15,6 @@ body{
 nav, main{
     padding: 0 5%;
 }
-nav {
-    /*background-color: white;*/
-    margin-top: 0;
-    margin-bottom: 0;
-    display:flex;
-    align-items: center;
-}
 main{
     /*background-color: white;*/
     margin: 0;                       
@@ -64,8 +57,11 @@ img{
 table {
     margin-bottom: 1rem;
 }
-td{
+td {
     vertical-align: text-top; 
+}
+summary:hover {
+    cursor: pointer;
 }
 .d {
     color :gray;
@@ -77,9 +73,11 @@ a{
 }
 /*NAVIGATION*/
 nav{
+    display:flex;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin:2rem 0;
+    margin:2rem 0 1rem;
 }
 nav ul{
     padding:2% 0%;
@@ -97,19 +95,52 @@ nav a{
 }
 nav button{
     margin-left: auto;
-    margin-right: 2%;
+    margin-right: 2rem;
+    width:3rem; 
+    height:3rem;
     background-color:  rgb(10, 10, 10);
-    color:  white;
-    border-radius: 1rem;
-    font-size: 1.5rem;
+    border-radius: 2.5rem;
     transition: all 1s ease;
-    padding: 0.5rem;
+    padding: 1rem;
     cursor: pointer;
     border-width: 0;
+    background-image: url(../images/moon.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 75%;
+    overflow: hidden;
 }
 .dark-button {
     background-color:  white;
     color:  rgb(10, 10, 10);
+    background-image: url(../images/sun.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    overflow: hidden;
+}
+button div {
+    background-color:  rgb(255,255,255);
+    width:3rem; 
+    height: 3rem;
+    border-radius: 1.5rem;
+    transition: all 1s ease;
+    padding: 0;
+    cursor: pointer;
+    border-width: 0;
+}
+.Button-dark {
+    background-color: white;
+    transition: all 1s ease;
+    background-image: url(../images/sun.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    background-size: 30%;
+    overflow: hidden;
+}
+.Button-div div {
+    background-color:  rgb(10, 10, 10);
+    transition: all 1s ease;
+    padding-left: 2rem;
 }
 /*ABOUT ME*/
 .about-me {
@@ -149,7 +180,7 @@ nav button{
         display: grid;
         grid-template-areas:'img img'
                             'text text';
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr;
     }
     .text {
         grid-area: text;
@@ -232,6 +263,9 @@ nav button{
 .languages li{
     margin-right:2rem;
     list-style: none;
+}
+.languages aside{
+    color: gray;
 }
 /*FOOTER*/
 footer {
