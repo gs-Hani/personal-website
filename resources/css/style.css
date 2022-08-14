@@ -57,8 +57,11 @@ img{
 table {
     margin-bottom: 1rem;
 }
-td{
+td {
     vertical-align: text-top; 
+}
+summary:hover {
+    cursor: pointer;
 }
 .d {
     color :gray;
@@ -93,8 +96,8 @@ nav a{
 nav button{
     margin-left: auto;
     margin-right: 2rem;
-    width:5rem; 
-    height: 5rem;
+    width:3rem; 
+    height:3rem;
     background-color:  rgb(10, 10, 10);
     border-radius: 2.5rem;
     transition: all 1s ease;
@@ -112,7 +115,6 @@ nav button{
     color:  rgb(10, 10, 10);
     background-image: url(../images/sun.svg);
     background-repeat: no-repeat;
-    /*background-position: 20% 50%;*/
     background-size: 75%;
     overflow: hidden;
 }
@@ -261,6 +263,9 @@ button div {
 .languages li{
     margin-right:2rem;
     list-style: none;
+}
+.languages aside{
+    color: gray;
 }
 /*FOOTER*/
 footer {
